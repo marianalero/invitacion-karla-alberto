@@ -9,7 +9,7 @@
 		var number =(params.number == undefined )?0:params.number
 		var pases = (number == 1) ? " pase" : " pases";
 	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
-	
+
 	// var dateDue = new Date("2024-09-01");
 	// var today = new Date();
 
@@ -139,9 +139,9 @@
 		$('a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
-		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
-		    }, 500);
+		    // $('html, body').animate({
+		    //     scrollTop: $('[data-section="' + section + '"]').offset().top
+		    // }, 500);
 
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
@@ -412,6 +412,14 @@
 			btn2.click();
 		});
 		$('#asistire').prop('checked',true);
+
+		$("#btnIglesia").click(function(){
+			window.location.href="https://maps.app.goo.gl/Te3poE8qDmzuUxKD8?g_st=com.google.maps.preview.copy";
+		});
+
+		$("#btnRecepcion").click(function(){
+			window.location.href="https://maps.app.goo.gl/MYggjZ8dnu9F748K8?g_st=com.google.maps.preview.copy";
+		});
 	});
 
 
